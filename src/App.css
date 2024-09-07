@@ -1,0 +1,132 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  a {
+    font-weight: 500;
+    color: #0e19e7;
+    text-decoration: inherit;
+  }
+  
+  a:hover {
+    color: #7000f0;
+  }
+  
+  h4 {
+    font-size: 0.8em;
+    line-height: 1.5;
+    text-align: end;
+    margin: 10px;
+    color: red;
+  }
+  
+  button:hover {
+   background-color: #ffc400;
+  }
+  
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #031750;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #1a8bad;
+    }
+    button {
+      background-color: #b762c9;
+    }
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+    
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./S.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+    
+  .quote-container {
+    margin: 30% 0;
+    padding: 0.5rem;
+    border-radius: 1em;
+  }
+    
+  .quote {
+    font-family: "Nerko One", cursive;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+    width: 50vw;
+  }
+  
+  .new-quote-button,
+  .tweet-quote-button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin: 15px;
+  }
+  
+  .tweet-quote-button {
+    border: 1px solid black;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+      padding: 1rem;
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .quote-container {
+      margin: 50% 0;
+      padding: 1rem;
+      width: 80%;
+    }
+  
+    .quote {
+      font-size: 1.5em;
+      width: 100%;
+      margin: 0 auto;
+    }
+  
+    h4 {
+      font-size: 1em;
+    }
+  
+    .new-quote-button,
+    .tweet-quote-button {
+      font-size: 0.5em;
+      padding: 0.6em;
+      margin: 15px;
+      width: 20%;
+    }
+  }
+  
